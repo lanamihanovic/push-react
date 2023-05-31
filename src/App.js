@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Route></Route>
+        <Routes>
+          <Route></Route>
+          </Routes>        
         </Router>
       <Navbar />
     </div>
