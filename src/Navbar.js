@@ -1,12 +1,12 @@
 import React from "react";
-
+import Naslovna from "./Naslovna.js";
 const Navbar = () => {
   return (
     <nav>
       <ul>
         <li>
           {" "}
-          <a href="#"> Home </a>
+          <a href="Naslovna"> Home </a>
         </li>
         <li>
           {" "}
@@ -24,5 +24,5 @@ const Navbar = () => {
     </nav>
   );
 };
-
-export default Navbar; 
+<Naslovna />;
+export default Navbar;
