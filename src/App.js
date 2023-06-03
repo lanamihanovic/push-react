@@ -7,37 +7,38 @@ import Cetvrta from "./Components/Cetvrta";
 
 import React from "react";
 //import { render } from "react-dom";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router class="nav">
         <div>
           <ul>
             <li>
-              <Link to="/"></Link>
+              <Link to="/">Naslovna</Link>
             </li>
             <li>
-              <Link to="/Prva"></Link>
+              <Link to="/Prva">vijesti</Link>
             </li>
             <li>
-              <Link to="/Druga">Topics</Link>
+              <Link to="/Druga">Vinyl</Link>
             </li>
             <li>
-              <Link to="/Treca"></Link>
+              <Link to="/Treca">CD</Link>
             </li>
             <li>
-              <Link to="/Cetvrta"></Link>
+              <Link to="/Cetvrta">Prijava</Link>
             </li>
           </ul>
 
           <hr />
-
-          <Route exact path="/" component={Naslovna} />
-          <Route path="/Prva" component={Prva} />
-          <Route path="/Druga" component={Druga} />
-          <Route path="/Treca" component={Treca} />
-          <Route path="/Cetvrta" component={Cetvrta} />
+          <Routes>
+            <Route exact path="/" component={Naslovna} />
+            <Route path="/Prva" component={Prva} />
+            <Route path="/Druga" component={Druga} />
+            <Route path="/Treca" component={Treca} />
+            <Route path="/Cetvrta" component={Cetvrta} />
+          </Routes>
         </div>
       </Router>
       ;{" "}
