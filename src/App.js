@@ -6,8 +6,8 @@ import Treca from "./Components/Treca";
 import Cetvrta from "./Components/Cetvrta";
 
 import React from "react";
-//import { render } from "react-dom";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import Props from "./Components/Props";
 function App() {
   return (
     <div className="App">
@@ -41,7 +41,8 @@ function App() {
           </Routes>
         </div>
       </Router>
-      ;{" "}
+      <Props />
+      
     </div>
   );
 }
