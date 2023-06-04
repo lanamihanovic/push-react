@@ -14,16 +14,16 @@ function App() {
         <div>
           <ul>
             <li>
-              <Link to="/">Split</Link>
+              <Link to="/">Naslovna</Link>
             </li>
             <li>
-              <Link to="/Prva">Povijest </Link>
+              <Link to="/Prva">vijesti</Link>
             </li>
             <li>
-              <Link to="/Druga">Račun</Link>
+              <Link to="/Druga">Vinyl</Link>
             </li>
             <li>
-              <Link to="/Treca">Obavijesti</Link>
+              <Link to="/Treca">CD</Link>
             </li>
             <li></li>
           </ul>
