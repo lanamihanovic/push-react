@@ -3,14 +3,12 @@ import Naslovna from "./Components/Naslovna";
 import Prva from "./Components/Prva";
 import Druga from "./Components/Druga";
 import Treca from "./Components/Treca";
-import slika from "./preuzmi.jfif";
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import Props from "./Components/Props";
 function App() {
   return (
     <div className="App">
-      <img src={slika} className="slika" alt="404" />
       <Router class="nav">
         <div>
           <ul>

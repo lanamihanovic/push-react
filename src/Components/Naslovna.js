@@ -1,9 +1,10 @@
 import Footer from "./Footer";
+import Header from "./Header";
 
 function Naslovna({ props }) {
   return (
     <div className="App">
-      <Header>Lana Mihanović</Header>
+      <Header />
 
       <br />
       <Footer>
