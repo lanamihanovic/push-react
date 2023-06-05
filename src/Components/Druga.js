@@ -29,8 +29,8 @@ function Druga() {
       </p>
       <br />
 
-  <img src={require("./preuzmi.jfif")} alt="logo" />      
-     <h2> Pink Floyd </h2>
+      <img src={require("./Dark_Side_of_the_Moon.png")} alt="logo" />
+      <h2> Pink Floyd </h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id
         feugiat ante. Fusce laoreet enim in lacus malesuada, sed euismod nunc
