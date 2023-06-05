@@ -1,23 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Naslovna from "./Components/Naslovna";
+import Prva from "./Components/Prva";
+import Druga from "./Components/Druga";
+import Treca from "./Components/Treca";
+import slika from "./preuzmi.jfif";
+import React from "react";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import Props from "./Components/Props";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src={slika} className="slika" alt="404" />
+      <Router class="nav">
+        <div>
+          <ul>
+            <li>
+              <Link to="/">Naslovna</Link>
+            </li>
+            <li>
+              <Link to="/Prva">vijesti</Link>
+            </li>
+            <li>
+              <Link to="/Druga">Vinyl</Link>
+            </li>
+            <li>
+              <Link to="/Treca">CD</Link>
+            </li>
+            <li></li>
+          </ul>
+
+          <hr />
+          <Routes>
+            <Route exact path="/" component={Naslovna} />
+            <Route path="/Prva" component={Prva} />
+            <Route path="/Druga" component={Druga} />
+            <Route path="/Treca" component={Treca} />
+          </Routes>
+        </div>
+      </Router>
+      <Props />
     </div>
   );
 }
