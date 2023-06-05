@@ -3,6 +3,8 @@ import Footer from "./Footer";
 function Naslovna({ props }) {
   return (
     <div className="App">
+      <Header>Lana Mihanović</Header>
+
       <br />
       <Footer>
         {props.mjesto}

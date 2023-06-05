@@ -58,6 +58,7 @@ ul {
 img {
   width: 200px;
   height: 200px;
+  align-items: center;
 }
 .prva {
   background-color: rgb(222, 222, 222);
@@ -66,5 +67,10 @@ img {
   font-weight: 200;
   text-decoration: underline;
 }
-.prva p {
+a {
+  color: rgb(243, 39, 39);
+  text-decoration: underline;
+}
+a::after {
+  color: black;
 }

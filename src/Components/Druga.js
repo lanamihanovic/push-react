@@ -4,7 +4,7 @@ function Druga() {
       <h1>Vinly</h1>
       <p></p>
 
-      <img src={""} />
+      <img src="preuzmi.jfif" />
       <h2>Iron Maiden ploča na popustu!!! </h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id
