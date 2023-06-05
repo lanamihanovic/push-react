@@ -3,7 +3,7 @@ import Naslovna from "./Components/Naslovna";
 import Prva from "./Components/Prva";
 import Druga from "./Components/Druga";
 import Treca from "./Components/Treca";
-
+import slika from './'
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import Props from "./Components/Props";
@@ -38,6 +38,7 @@ function App() {
         </div>
       </Router>
       <Props />
+      
     </div>
   );
 }

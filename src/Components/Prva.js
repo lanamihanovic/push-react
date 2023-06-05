@@ -1,6 +1,6 @@
 function Prva() {
   return (
-    <div className="App">
+    <div className="prva">
       <h1>Vijesti o glazbi iz cijelog svijeta!!</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
@@ -102,9 +102,6 @@ function Prva() {
         viverra. Quisque ullamcorper consequat consequat. Morbi pellentesque
         semper dui in faucibus. Sed et tempus ante.
       </p>
-      
-      
-      
     </div>
   );
 }
