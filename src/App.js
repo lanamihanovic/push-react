@@ -3,16 +3,24 @@ import Naslovna from "./Components/Naslovna";
 import Prva from "./Components/Prva";
 import Druga from "./Components/Druga";
 import Treca from "./Components/Treca";
-import slika from "./preuzmi.jfif";
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import Props from "./Components/Props";
 function App() {
   return (
     <div className="App">
-      <img src={slika} className="slika" alt="404" />
+      
       <Router class="nav">
-        <div>
+        
+        <Routes>
+          <Route path="/" element={Naslovna} />
+          <Route path="/Prva" element={Prva} />
+          <Route path="/Druga" element={Druga} />
+          <Route path="/Treca" element={Treca} />
+        </Routes>
+      </Router>
+      <Props />
+       <div>
           <ul>
             <li>
               <Link to="/">Naslovna</Link>
@@ -30,15 +38,7 @@ function App() {
           </ul>
 
           <hr />
-          <Routes>
-            <Route exact path="/" component={Naslovna} />
-            <Route path="/Prva" component={Prva} />
-            <Route path="/Druga" component={Druga} />
-            <Route path="/Treca" component={Treca} />
-          </Routes>
-        </div>
-      </Router>
-      <Props />
+          </div>
     </div>
   );
 }

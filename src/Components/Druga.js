@@ -4,7 +4,7 @@ function Druga() {
       <h1>Vinly</h1>
       <p></p>
 
-      <img src="preuzmi.jfif" />
+      <img src={require("./preuzmi.jfif")} alt="logo" />
       <h2>Iron Maiden ploča na popustu!!! </h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id
@@ -29,7 +29,7 @@ function Druga() {
       </p>
       <br />
 
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ29beJKkDgp08fViWab32nYOQuVGIU6P376ggW&s=0" />
+      <img src={require("./Dark_Side_of_the_Moon.png")} alt="logo" />
       <h2> Pink Floyd </h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id
