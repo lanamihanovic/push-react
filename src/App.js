@@ -9,8 +9,18 @@ import Props from "./Components/Props";
 function App() {
   return (
     <div className="App">
+      
       <Router class="nav">
-        <div>
+        
+        <Routes>
+          <Route path="/" element={Naslovna} />
+          <Route path="/Prva" element={Prva} />
+          <Route path="/Druga" element={Druga} />
+          <Route path="/Treca" element={Treca} />
+        </Routes>
+      </Router>
+      <Props />
+       <div>
           <ul>
             <li>
               <Link to="/">Naslovna</Link>
@@ -28,15 +38,7 @@ function App() {
           </ul>
 
           <hr />
-          <Routes>
-            <Route exact path="/" component={Naslovna} />
-            <Route path="/Prva" component={Prva} />
-            <Route path="/Druga" component={Druga} />
-            <Route path="/Treca" component={Treca} />
-          </Routes>
-        </div>
-      </Router>
-      <Props />
+          </div>
     </div>
   );
 }
